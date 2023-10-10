@@ -1,0 +1,29 @@
+For each of the following Richter scale measurements,your program will perform the appropriate calculations and display the equivalent amount of energy in joules and in tons of exploded TNT:
+*1.0
+*5.0
+*9.1(Indonesia earthquake,2004)
+*9.2(Alaska earthquake,1964)
+*9.5(Chile earthquake;largest ever measured)
+The program will prompt the user to enter a Richter scale measurement accept a floating point value representing that measurement,perform the appropriate calculations,display the equivalent amount of energy in joules and in tons of exploded TNT for  that user-selected value.
+
+The Richter scale is a way to quantify the magnitude of an earthquake using a base-10
+logarithmic scale. The magnitude is defined as the logarithm of the ratio of the amplitude of
+waves measured by a seismograph to an arbitrarily small amplitude. An earthquake that
+measures 5.0 on the Richter scale has a shaking amplitude 10 times larger than one that measures
+4.0, and corresponds to a 31.6 times larger release of energy. [Rephrased from Wikipedia]
+
+The energy in joules released for a particular Richter scale measurement is given by:
+
+Energy =10**((1.5*richter)+4.8)
+where Energy is measured in joules and richter is  the Richter scale measurement(typically on a scale from 1-10 as a floating point number.)
+
+One ton of exploded TNT yields (4.184*(10^9)) joules.Thus, you can releate the energy released in joules to tons of exploded TNT.
+
+###RULES###
+The input function is used to accept a response from the user.The fnction takes a string(a sequence of characters between quotes) as a prompt to display to the user.
+It then waits until the user types a response,terminated by the user touching the Enter key.
+Finally,the function returns the user's response as a string.
+If the user's response is spposed to be processed as a numeric value,the returned string must be converted into number.
+When working with floating point numbers,a string is converted into a floating point number using the float function.
+The function accepts a string as its argument and returns the floating point number which the string represents.
+
